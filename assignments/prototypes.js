@@ -34,7 +34,7 @@ function CharacterStats(spec) {
     GameObject.call(this, spec);
     this.healthPoints = spec.healthPoints;
 }
-CharacterStats.prototype = GameObject.prototype;
+CharacterStats.prototype = Object.create(GameObject.prototype);
 CharacterStats.prototype.takeDamage = function () {
     return `${this.name} took damage`;
 };
@@ -60,7 +60,7 @@ function Humanoid(spec) {
     this.weapons = spec.weapons;
     this.language = spec.language;
 }
-Humanoid.prototype = CharacterStats.prototype;
+Humanoid.prototype = Object.create(CharacterStats.prototype);
 Humanoid.prototype.greet = function () {
     return `${this.name} offers a greeting in ${this.language}`;
 };
@@ -136,7 +136,7 @@ function Villain(spec) {
     Humanoid.call(this, spec);
     this.catchPhrase = spec.catchPhrase;
 };
-Villain.prototype = Humanoid.prototype;
+Villain.prototype = Object.create(Humanoid.prototype);
 Villain.prototype.taunt = function () {
     return `${this.catchPhrase}`;
 };
