@@ -1,0 +1,22 @@
+{
+  "name": "javascript-iii",
+  "version": "1.0.0",
+  "description": "This challenge focuses on using the `this` keyword as well as getting comfortable with prototypes by building out a fantasy themed video game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickb42/JavaScript-III.git"
+  },
+  "author": "patrickb42",
+  "license": "closed",
+  "bugs": {
+    "url": "https://github.com/patrickb42/JavaScript-III/issues"
+  },
+  "homepage": "https://github.com/patrickb42/JavaScript-III#readme",
+  "devDependencies": {
+    "eslint-config-crockford": "^2.0.0"
+  }
+}
