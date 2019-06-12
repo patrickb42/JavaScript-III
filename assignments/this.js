@@ -23,7 +23,7 @@ let var1 = {
     whatAreYou: function () {
         console.log(this.thing1);
     }
-}
+};
 var1.whatAreYou();
 
 // Principle 3
